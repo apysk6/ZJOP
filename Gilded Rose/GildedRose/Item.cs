@@ -4,7 +4,7 @@
     {
         protected string Name { get; set; }
         protected int SellIn { get; set; }
-        protected int Quality { get; set; }
+        public int Quality { get; set; }
 
         protected Item(string name, int sellIn, int quality)
         {
@@ -12,6 +12,8 @@
             SellIn = sellIn;
             Quality = quality;
         }
+
+        public abstract Item UpdateQuality();
 
         public override bool Equals(object obj)
         {
@@ -26,6 +28,11 @@
         public override int GetHashCode()
         {
             return Name.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return Name + ", " + SellIn + ", " + Quality;
         }
     }
 }

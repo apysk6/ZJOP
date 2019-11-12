@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\csharp\csharp.csproj">
+    <ProjectReference Include="..\GildedRose\GildedRose.csproj">
       <Project>{176C0214-9136-4079-8DAB-11D7420C3881}</Project>
-      <Name>csharp</Name>
+      <Name>GildedRose</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
